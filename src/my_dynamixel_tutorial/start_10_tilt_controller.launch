@@ -1,0 +1,68 @@
+<launch>
+    <!-- Start tilt joint controller -->
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt2.yaml" command="load"/>
+    <node name="tilt2_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt2_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt3.yaml" command="load"/>
+    <node name="tilt3_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt3_controller"
+        output="screen"/>
+        
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt4.yaml" command="load"/>
+    <node name="tilt4_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt4_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt5.yaml" command="load"/>
+    <node name="tilt5_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt5_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt6.yaml" command="load"/>
+    <node name="tilt6_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt6_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt7.yaml" command="load"/>
+    <node name="tilt7_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt7_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt8.yaml" command="load"/>
+    <node name="tilt8_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt8_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt9.yaml" command="load"/>
+    <node name="tilt9_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt9_controller"
+        output="screen"/>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/10motors/tilt10.yaml" command="load"/>
+    <node name="tilt10_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            tilt10_controller"
+        output="screen"/>
+
+
+</launch>

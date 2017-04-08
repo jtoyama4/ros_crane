@@ -1,0 +1,42 @@
+<launch>
+    <!-- Start pan joint controller -->
+
+    <rosparam file="$(find my_dynamixel_tutorial)/5motors/pan1.yaml" command="load"/>
+    <node name="pan1_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            pan1_controller"
+        output="screen"/>
+        
+    <!-- Start pan joint controller -->
+    <rosparam file="$(find my_dynamixel_tutorial)/5motors/pan2.yaml" command="load"/>
+    <node name="pan2_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            pan2_controller"
+        output="screen"/>
+        
+    <!-- Start pan joint controller -->
+    <rosparam file="$(find my_dynamixel_tutorial)/5motors/pan3.yaml" command="load"/>
+    <node name="pan3_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            pan3_controller"
+        output="screen"/>
+        
+    <!-- Start pan joint controller -->
+    <rosparam file="$(find my_dynamixel_tutorial)/5motors/pan4.yaml" command="load"/>
+    <node name="pan4_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            pan4_controller"
+        output="screen"/>
+
+    <!-- Start pan joint controller -->
+    <rosparam file="$(find my_dynamixel_tutorial)/5motors/pan5.yaml" command="load"/>
+    <node name="pan5_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=dxl_manager
+            --port pan_tilt_port
+            pan5_controller"
+        output="screen"/>
+</launch>

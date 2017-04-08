@@ -1,0 +1,12 @@
+tilt7_controller:
+  controller:
+    package: dynamixel_controllers
+    module: joint_position_controller
+    type: JointPositionController
+  joint_name: tilt_joint
+  joint_speed: 0.5
+  motor:
+    id: 7
+    init: 3000
+    min: 4096
+    max: 0
